@@ -5,7 +5,8 @@ int8_t is_ascii(unsigned char c) {
     return c <= 128;
 }
 
-void test_is_ascii(unsigned char c) {
+void test_is_ascii(unsigned char c) { //goes from 0-255
+                                        //unsigned interpretation: all positive
     printf("is_ascii(%c %d) = %s\n", c, c, is_ascii(c) ? "true" : "false");
 }
 void tests_is_ascii() {
